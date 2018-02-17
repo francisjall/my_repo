@@ -2,12 +2,16 @@
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
 function cube(){
-var num = document.getElementById("n1"),
+var num = document.getElementById("n1");
 num.value = Math.pow(num.value,3);
 }
 function fourth(){
-var num = document.getElementById("n1"),
+var num = document.getElementById("n1");
 num.value = Math.pow(num.value,4);
+}
+function my_sin(){
+var num = document.getElementById("n1");
+num.value = Math.sin(num.value);
 }
 </script>
 </head>
@@ -17,5 +21,6 @@ Number:
 <input type="text" id="n1">
 <button onclick="cube()">x^3</button>
 <button onclick="fourth()">x^4</button>
+<button onclick="my_sin(x)">sin(x)</button>
 </body>
 </html>
